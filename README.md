@@ -2,7 +2,8 @@
 - 책 : EBISUCOM 님의 &lt;모던 웹사이트 디자인의 정석>
 - 참여자 : @amisu1203
 
-해당 스터디는 책의 예제를 따라서 만들어보며 챕터별로 commit하며 진행합니다.
+해당 스터디는 책의 예제를 따라서 만들어보며 약간의 변형이 있을 수 있습니다.
+챕터의 순서대로 commit하며 진행합니다.
 
 <br>
 
@@ -18,7 +19,7 @@
 
   - ### ch01-1. 박스 가로 정렬
     
-    - [예제코드] <https://github.com/amisu1203/-study-html-css/tree/main/%20ch01/1-1.%EB%B0%95%EC%8A%A4%EA%B0%80%EB%A1%9C%EC%A0%95%EB%A0%AC>
+    - [학습 코드](https://github.com/amisu1203/-study-html-css/tree/main/%20ch01/1-1.%EB%B0%95%EC%8A%A4%EA%B0%80%EB%A1%9C%EC%A0%95%EB%A0%AC)
   
 
 ## ch02. 웹 페이지 작성 준비

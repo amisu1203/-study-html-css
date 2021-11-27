@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한 쪽 박스의 너비를 픽셀로 고정</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        /* 12번 */
+        .cont1 .box2 {
+            float: left;
+            width: 300px;
+        }
+        .cont1 .box3 {
+            float: left;
+            width: calc(100% - 300px);
+            height: auto;
+            /* 기본 스타일링으로 height 값을 준것을 해제하기 위해 auto 값을 줌 */
+        }
+        .cont-float::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* 13번 */
+        .cont2 .box2 {
+            float: left;
+            width: 300px;
+        }
+        .cont2 .box3 {
+            float: none;
+            width: auto;
+            margin-left: 300px;
+            height: auto;
+        }
+        .cont-float::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* 14번 */
+        .cont3 .box2 {
+            float: left;
+            width: 100%;
+            margin-right: -300px;
+            padding-right: 300px;
+            box-sizing: border-box;
+            height: auto;
+        }
+        .cont3 .box3 {
+            width: 300px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 12번) box2 너비 고정하는 경우 - clac() 사용  -->
+    <section class="cont1">
+        <div class="box1">box1</div>
+        <div class="cont-float">
+            <div class="box2">box2</div>
+            <div class="box3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, quas, quasi ex repellat tempore asperiores rem illum accusamus iure repellendus recusandae necessitatibus. Porro maiores molestiae facilis corporis aut qui culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quisquam quasi nostrum nesciunt tempore officiis voluptate minus nemo, earum consectetur et asperiores iure fuga animi dolorum assumenda repudiandae aut? Cupiditate! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident optio omnis magnam nulla corrupti perspiciatis dolores velit itaque eum cumque? Tempora ut consequuntur aspernatur iste sed fugiat blanditiis consequatur! Earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum sequi nemo! Magni harum labore, similique adipisci dolores iusto cum officia perspiciatis itaque expedita! Molestias in laboriosam odit tempore ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eligendi blanditiis fugit, consequatur laboriosam provident et corporis? Qui voluptas voluptate temporibus consectetur.</div>
+        </div>
+        <div class="box4">box4</div>
+    </section>
+    <!-- 안드로이드 4.3 이전의 표준 브라우저를 위한 13, 14번의 예제입니다. -->
+    <!-- 13번) box2 너비 고정하는 경우 - margin 사용 -->
+    <section class="cont2">
+        <div class="box1">box1</div>
+        <div class="cont-float">
+            <div class="box2">box2</div>
+            <div class="box3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, quas, quasi ex repellat tempore asperiores rem illum accusamus iure repellendus recusandae necessitatibus. Porro maiores molestiae facilis corporis aut qui culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quisquam quasi nostrum nesciunt tempore officiis voluptate minus nemo, earum consectetur et asperiores iure fuga animi dolorum assumenda repudiandae aut? Cupiditate! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident optio omnis magnam nulla corrupti perspiciatis dolores velit itaque eum cumque? Tempora ut consequuntur aspernatur iste sed fugiat blanditiis consequatur! Earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum sequi nemo! Magni harum labore, similique adipisci dolores iusto cum officia perspiciatis itaque expedita! Molestias in laboriosam odit tempore ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eligendi blanditiis fugit, consequatur laboriosam provident et corporis? Qui voluptas voluptate temporibus consectetur.</div>
+        </div>
+        <div class="box4">box4</div>
+    </section>
+
+    <!-- 14번) box3 너비 고정하는 경우 - margin, padding 사용  -->
+    <section class="cont3">
+        <div class="box1">box1</div>
+        <div class="cont-float">
+            <div class="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, quas, quasi ex repellat tempore asperiores rem illum accusamus iure repellendus recusandae necessitatibus. Porro maiores molestiae facilis corporis aut qui culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quisquam quasi nostrum nesciunt tempore officiis voluptate minus nemo, earum consectetur et asperiores iure fuga animi dolorum assumenda repudiandae aut? Cupiditate! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident optio omnis magnam nulla corrupti perspiciatis dolores velit itaque eum cumque? Tempora ut consequuntur aspernatur iste sed fugiat blanditiis consequatur! Earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum sequi nemo! Magni harum labore, similique adipisci dolores iusto cum officia perspiciatis itaque expedita! Molestias in laboriosam odit tempore ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eligendi blanditiis fugit, consequatur laboriosam provident et corporis? Qui voluptas voluptate temporibus consectetur.</div>
+            <div class="box3">box3</div>
+        </div>
+        <div class="box4">box4</div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>분할하고 싶은 만큼 박스 개수를 추가</title>
+   <link rel="stylesheet" href="../main.css">
+   <style>
+      /* 7번 */
+      /* 박스를 분할하는 것과 박스를 가로로 분할하는 것은 항상 함께 움직인다. 
+        3개로 분할하면 가로로 분할하는 너비는 33.33%, 4개로 분할하면 가로로 분할하는 너비는 25%이듯이. */
+      .box {
+         float: left;
+         width: 33.33333%;
+      }
+
+      section::after {
+         content: '';
+         display: block;
+         clear: both;
+      }
+   </style>
+</head>
+
+<body>
+   <section>
+      <!-- 7번) 분할하는 박스 개수 추가 -->
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+   </section>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch01-2.박스 가로 정렬</title>
+    <style>
+        /* box 기본 스타일 */
+        section {
+            width: 600px;
+            margin: 30px auto;
+        }
+
+        [class^="box"] {
+            height: 200px;
+            border: 2px solid pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        /* 1번 예제 */
+
+        .cont1 .box2,
+        .cont1 .box3 {
+            float: left;
+            width: 50%;
+        }
+        .cont1 .cont-float::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- 1번) 가로 정렬 대상: box2, box3인 경우 -->
+    <section class="cont1">
+        <div class="box1">box1</div>
+        <div class="cont-float">
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+        </div>
+        <div class="box4">box4</div>
+    </section>
+
+</body>
+
+</html>

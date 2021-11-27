@@ -33,7 +33,7 @@
 
   - ### ch01-3. 박스 너비 지정
 
-    - [학습코드](ㄴㄴ)
+    - [학습코드](https://github.com/amisu1203/-study-html-css/tree/main/ch01/1-3.%EB%B0%95%EC%8A%A4%EB%84%88%EB%B9%84%EC%A7%80%EC%A0%95)
 
 
 ## ch02. 웹 페이지 작성 준비

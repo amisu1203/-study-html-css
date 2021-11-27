@@ -23,7 +23,7 @@
   
   - ### ch01-1. 박스 가로 정렬
     
-    - [학습 코드](https://github.com/amisu1203/-study-html-css/tree/main/%20ch01/1-1.%EB%B0%95%EC%8A%A4%EA%B0%80%EB%A1%9C%EC%A0%95%EB%A0%AC)
+    - [학습 코드](https://github.com/amisu1203/-study-html-css/tree/main/ch01/1-1.%EB%B0%95%EC%8A%A4%EA%B0%80%EB%A1%9C%EC%A0%95%EB%A0%AC)
 
   
   - ### ch01-2. 박스 분할

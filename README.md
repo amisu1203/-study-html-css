@@ -28,6 +28,7 @@
   
   - ### ch01-2. 박스 분할
 
+    - [학습 코드](https://github.com/amisu1203/-study-html-css/tree/main/ch01/1-2.%EB%B0%95%EC%8A%A4%EB%B6%84%ED%95%A0)
     
 
 

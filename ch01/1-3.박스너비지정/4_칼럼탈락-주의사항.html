@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>칼럼 탈락 현상 주의할 부분</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        /* 10번 */
+        .box1,
+        .box2,
+        .box3 {
+            float: left;
+            width: 50%;
+        }
+
+        .cont-float::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .box1 {
+            height: 280px;
+        }
+
+        /* 11번 */
+        .cont2 .box3 {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 10번) 칼럼 탈락을 사용할 때 박스의 높이가 다른 경우 -->
+        <section class="cont1">
+            <div class="cont-float">
+                <div class="box box1">box1</div>
+                <div class="box box2">box2</div>
+                <div class="box box3">box3</div>
+            </div>
+            <div class="box box4">box4</div>
+        </section>
+        <!-- 11번) 10번의 개행된 박스가 오른쪽에 출력되는 것을 해결하는 경우 -->
+        <section class="cont2">
+            <div class="cont-float">
+                <div class="box box1">box1</div>
+                <div class="box box2">box2</div>
+                <div class="box box3">box3</div>
+            </div>
+            <div class="box box4">box4</div>
+        </section>
+    </div>
+</body>
+
+</html>

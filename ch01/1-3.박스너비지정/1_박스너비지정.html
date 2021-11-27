@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스의 너비를 지정</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        /* 8번 */
+        .cont1 .box2 {
+            float: left;
+            width: 30%;
+        }
+        .cont1 .box3 {
+            float: left;
+            width: 70%;
+        }
+        .cont1 .cont-float::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* 9번 */
+        .cont2 .box1 {
+            float: left;
+            width: 50%;
+        }
+        .cont2 .box2 {
+            float: left;
+            width: 25%;
+        }
+        .cont2 .box3 {
+            float: left;
+            width: 25%;
+        }
+        .cont2 .cont-float::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 8번) 박스의 너비를 지정 -->
+        <section class="cont1">
+            <div class="box box1">box1</div>
+            <div class="cont-float">
+                <div class="box box2">box2</div>
+                <div class="box box3">box3</div>
+            </div>
+            <div class="box box4">box4</div>
+        </section>
+
+        <!-- 9번) 박스의 너비를 지정 -->
+        <section class="cont2">
+            <div class="cont-float">
+                <div class="box box1">box1</div>
+                <div class="box box2">box2</div>
+                <div class="box box3">box3</div>
+            </div>
+            <div class="box box4">box4</div>
+        </section>
+    </div>
+</body>
+
+</html>

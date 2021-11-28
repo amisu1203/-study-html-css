@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스를 겹쳐 올리는 레이아웃</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        /* 20번 */
+        .cont1 {
+            border: 3px solid black;
+            position: relative;
+        }
+        .cont1 .box2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100px;
+            background: #ffffee;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 20번) 박스를 겹쳐 올리는 레이아웃의 경우 -->
+    <section class="cont1">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </section>
+</body>
+
+</html>

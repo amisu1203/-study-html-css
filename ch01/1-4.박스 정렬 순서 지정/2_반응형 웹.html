@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 디자인 응용</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+
+        /* 18번 */
+        .cont1 .cont-float::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .cont1 .box2 {
+            float: left;
+            width: 20%;
+        }
+        .cont1 .box3 {
+            float: left;
+            width: 60%;
+        }
+        .cont1 .box4 {
+            float: left;
+            width: 20%;
+        }
+
+        @media screen and (max-width: 780px) {
+            .cont1 .box {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        /* 19번 */
+        @media screen and (min-width: 781px) {
+            .cont2 .cont-float2::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .cont2 .cont-float2 {
+                float: left;
+                width: 80%;
+            }
+            .cont2 .box4 {
+                float: left;
+                width: 20%;
+            }
+
+            .cont2 .cont-float2::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .cont2 .box2 {
+                float: right;
+                width: 75%;
+
+            }
+            .cont2 .box3 {
+                float: left;
+                width: 25%;
+            }
+        }
+
+        /* 20번 */
+        @media screen and (min-width: 600px) and (max-width: 780px) {
+            .cont3 .cont-float2::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .cont3 .box2 {
+                float: right;
+                width: 80%;
+            }
+            .cont3 .box3 {
+                float: left;
+                width: 20%;
+            }
+        }
+        @media  screen and (min-width: 781px) {
+            .cont3 .cont-float1::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .cont3 .cont-float2 {
+                float: left;
+                width: 80%;
+            }
+            .cont3 .box4 {
+                float: left;
+                width: 20%;
+            }
+
+            .cont3 .cont-float2::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .cont3 .box2 {
+                float: right;
+                width: 75%;
+            }
+            .cont3 .box3 {
+                float: left;
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 18번) 780px 이하에서 가로 배치 해제하는 경우-->
+    <section class="cont1">
+        <div class="box1 box">box1</div>
+        <div class="cont-float">
+            <div class="box2 box">box2</div>
+            <div class="box3 box">메인 콘텐츠</div>
+            <div class="box4 box">box4</div>
+        </div>
+    </section>
+
+    <!-- 19번) 780px 이하에서 가로 배치 해제하며, 781px 이상에서 box3-2-4 가로 배치인 경우  -->
+    <section class="cont2">
+        <div class="box1 box">box1</div>
+        <div class="cont-float">
+            <div class="cont-float2">
+                <div class="box2 box">메인콘텐츠</div>
+                <div class="box3 box">box3</div>
+            </div>
+            <div class="box4 box">box4</div>
+        </div>
+    </section>
+
+    <!-- 20번) 599px 이하 : 가로 배치 해제 / 600px~780px : box3-2만 가로 배치 / 781px 이상 : box3-2-4 가로 배치 -->
+    <section class="cont3">
+        <div class="box1 box">box1</div>
+        <div class="cont-float1">
+            <div class="cont-float2">
+                <div class="box2 box">메인콘텐츠</div>
+                <div class="box3 box">box3</div>
+            </div>
+            <div class="box4 box">box4</div>
+        </div>
+    </section>
+</body>
+
+</html>

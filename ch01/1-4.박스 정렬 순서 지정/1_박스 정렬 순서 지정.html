@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 정렬 순서 지정</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        /* 15번 */
+        .cont1 .box1 {
+            float: left;
+            width: 25%;
+        }
+        .cont1 .box2 {
+            float: left;
+            width: 25%;
+        }
+        .cont1 .box3 {
+            float: left;
+            width: 25%;
+        }
+        .cont1 .box4 {
+            float: left;
+            width: 25%;
+        }
+
+        /* 16번 */
+        .cont2 .box1 {
+            float: right;
+            width: 25%;
+        }
+        .cont2 .box2 {
+            float: right;
+            width: 25%;
+        }
+        .cont2 .box3 {
+            float: right;
+            width: 25%;
+        }
+        .cont2 .box4 {
+            float: right;
+            width: 25%;
+        }
+
+        /* 17번 */
+        .cont3 .box1 {
+            float: left;
+            width: 25%;
+        }
+        .cont3 .box2 {
+            float: right;
+            width: 25%;
+        }
+        .cont3 .box3 {
+            float: left;
+            width: 25%;
+        }
+        .cont3 .box4 {
+            float: right;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 15번) 정렬 순서 지정 Box1-2-3-4  -->
+    <section class="cont1">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </section>
+    
+    <!-- 16번) 정렬 순서 지정  box4-3-2-1 -->
+    <section class="cont2"> 
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </section>
+
+    <!-- 17번) 정렬 순서 지정 box1-3-4-2 -->
+    <div class="cont3">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+
+</html>

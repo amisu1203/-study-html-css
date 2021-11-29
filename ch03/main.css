@@ -3,7 +3,10 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* 사이트 헤더 */
+/* box1 */
+.box1 {
+    padding: 8px 0;
+}
 .site h1 a {
     color: #000000;
     text-decoration: none;
@@ -15,21 +18,24 @@ body {
 
 
 
-/* 메뉴 가로 정렬 */
+/* box2 */
 .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    background: #416164;
 }
 .menu ul a {
     color: #000000;
     font-size: 14px;
     text-decoration: none;
     display: block;    
-    padding: 5px;
+    padding: 15px;
+    color: #eeeeee;
 }
 .menu ul a:hover {
     background: #eeeeee;
+    color: #000000;
 }
 .menu ul::after {
     content: '';
@@ -41,7 +47,10 @@ body {
 }
 
 
-/* 기사 1 */
+/* box3 */
+.box3 {
+    padding: 40px 0 30px;
+}
 .article-tomato h2 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -56,7 +65,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* sidemenu*/
+/* box4 */
+.box4 {
+    padding: 40px 0 30px;
+}
 .sidemenu {
     margin-bottom: 30px;
 }
@@ -132,11 +144,12 @@ body {
     background: #eeeeee;
 }
 
-/* footer */
+/* box5 */
 .copyright p{
     margin: 0;
     color: #666666;
     font-size: 14px;
+    border-top: 1px solid #dddddd;
 }
 
 
@@ -149,6 +162,10 @@ body {
     .cont-float .box3 {
         float: left;
         width: 70%;
+        padding-right: 50px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
     }
     .cont-float .box4 {
         float: right;

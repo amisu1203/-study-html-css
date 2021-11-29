@@ -1,0 +1,157 @@
+@charset "UTF-8";
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 사이트 헤더 */
+.site h1 a {
+    color: #000000;
+    text-decoration: none;
+}
+.site h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+
+/* 메뉴 가로 정렬 */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul a {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;    
+    padding: 5px;
+}
+.menu ul a:hover {
+    background: #eeeeee;
+}
+.menu ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.menu ul li {
+    float: left;
+}
+
+
+/* 기사 1 */
+.article-tomato h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.article-tomato p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.article-tomato img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* sidemenu*/
+.sidemenu {
+    margin-bottom: 30px;
+}
+.sidemenu h2 {
+    margin: 0 0 10px;
+    border-bottom: dotted 2px #dddddd;
+    color: #666666;
+    font-size: 18px;
+}
+.sidemenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidemenu ul a {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;    
+    padding: 5px;
+}
+.sidemenu ul a:hover {
+    background: #eeeeee;
+}
+/* 추천 기사 */
+.recommend {
+    margin-bottom: 30px;
+}
+.recommend h2 {
+    margin: 0 0 10px;
+    border-bottom: dotted 2px #dddddd;
+    color: #666666;
+    font-size: 18px;
+}
+.recommend ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.recommend ul a {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;    
+    padding: 5px;
+}
+.recommend ul a:hover {
+    background: #eeeeee;
+}
+/* 인기 기사 */
+.popular {
+    margin-bottom: 30px;
+}
+.popular h2 {
+    margin: 0 0 10px;
+    border-bottom: dotted 2px #dddddd;
+    color: #666666;
+    font-size: 18px;
+}
+.popular ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.popular ul a {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;    
+    padding: 5px;
+}
+.popular ul a:hover {
+    background: #eeeeee;
+}
+
+/* footer */
+.copyright p{
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .cont-float::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .cont-float .box3 {
+        float: left;
+        width: 70%;
+    }
+    .cont-float .box4 {
+        float: right;
+        width: 30%;
+    }
+}

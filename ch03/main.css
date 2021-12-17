@@ -10,11 +10,11 @@ body {
 .site h1 a {
     color: #85afb3;
     text-decoration: none;
-    font-family: 'Paytone One', sans-serif;
 }
 .site h1 {
     margin: 0;
     font-size: 30px;
+    font-family: 'Paytone One', sans-serif;
 }
 
 
@@ -50,7 +50,7 @@ body {
 }
 
 
-/* box3 */
+/* box3 - 기사 */
 .box3 {
     padding: 40px 0 30px;
 }
@@ -67,7 +67,16 @@ body {
     max-width: 100%;
     margin-bottom: 20px;
 }
-
+/* 기사 작성일 */
+.time-article-tomato {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.time-article-tomato i {
+    color: #aaaaaa;
+    margin-right: 5px;
+    font-size: 18px;
+}
 /* box4 */
 .box4 {
     padding: 40px 0 30px;

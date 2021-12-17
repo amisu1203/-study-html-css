@@ -18,12 +18,14 @@ body {
 
 
 
-/* box2 */
+/* box2 - 네비게이션 */
+.box2 {
+    background: #92adaf;
+}
 .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background: #416164;
 }
 .menu ul a {
     color: #000000;
@@ -179,7 +181,7 @@ body {
 
 /* 600px ~ 767px일 때 */
 @media screen and (min-width: 600px) and (max-width: 767px) {
-     /* box4-1과 box4-2를 가로정렬하는 설정*/
+    /* box4-1과 box4-2를 가로정렬하는 설정*/
     .box4::after {
         clear: both;
         display: block;
@@ -226,5 +228,10 @@ body {
 
 /* 1040px 이상일 때 */
 @media screen and (min-width: 1040px) {
-
+    /* 전체 너비 고정 */
+    .box1, .box2, .cont-float, .box5 {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

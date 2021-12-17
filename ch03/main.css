@@ -54,29 +54,56 @@ body {
 .box3 {
     padding: 40px 0 30px;
 }
-.article-tomato h2 {
+.article-cat h2 {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 36px;
 }
-.article-tomato p {
-    margin-top: 0;
-    margin-bottom: 20px;
+.article-cat p {
+    line-height: 35px;
 }
-.article-tomato img {
+.article-cat img {
     max-width: 100%;
     margin-bottom: 20px;
 }
 /* 기사 작성일 */
-.time-article-tomato {
+.time-article-cat {
     margin-top: -10px;
     margin-bottom: 20px;
+    line-height: 20px;
 }
-.time-article-tomato i {
+.time-article-cat i {
     color: #aaaaaa;
     margin-right: 5px;
     font-size: 18px;
+    vertical-align: bottom;
 }
+/* 기사 태그 분류 */
+.link-article-tag {
+    margin-bottom: 10px;
+}
+.link-article-tag ul::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.link-article-tag li {
+    float: left;
+}
+.link-article-tag li a {
+    display: block;
+    padding: 3px 5px;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    background: #65b1b8;
+    margin-right: 5px;
+    border-radius: 3px;
+} 
+.link-article-tag li a:hover {
+    background: #89dae1;
+}
+
 /* box4 */
 .box4 {
     padding: 40px 0 30px;
@@ -177,7 +204,7 @@ body {
         font-size: 20px;
     }
     /* 기사 제목 */
-    .article-tomato h2 {
+    .article-cat h2 {
         font-size: 26px;
     }
     /* 박스 사이의 간격 */

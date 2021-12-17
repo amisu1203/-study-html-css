@@ -8,8 +8,9 @@ body {
     padding: 8px 0;
 }
 .site h1 a {
-    color: #000000;
+    color: #85afb3;
     text-decoration: none;
+    font-family: 'Paytone One', sans-serif;
 }
 .site h1 {
     margin: 0;
@@ -228,7 +229,6 @@ body {
 
 /* 1040px 이상일 때 */
 @media screen and (min-width: 1040px) {
-    /* 전체 너비 고정 */
     .box1, .box2, .cont-float, .box5 {
         width: 1200px;
         margin-left: auto;

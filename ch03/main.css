@@ -153,6 +153,36 @@ body {
 }
 
 
+/* 599px 이하일 때 */
+@media screen and (max-width: 599px) {
+    /* 네비게이션 */
+    .menu li a {
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+    /* 사이트 이름 */
+    .site h1 {
+        font-size: 20px;
+    }
+    /* 기사 제목 */
+    .article-tomato h2 {
+        font-size: 26px;
+    }
+    /* 박스 사이의 간격 */
+    .box1 {
+        padding: 4px 0;
+    }
+    .box3 {
+        padding-top: 25px;
+    }
+}
+
+/* 600px ~ 767px일 때 */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+}
+
+/* 768px 이상일 때 */
 @media screen and (min-width: 768px) {
     .cont-float::after {
         content: '';
@@ -171,4 +201,9 @@ body {
         float: right;
         width: 30%;
     }
+}
+
+/* 1040px 이상일 때 */
+@media screen and (min-width: 1040px) {
+
 }

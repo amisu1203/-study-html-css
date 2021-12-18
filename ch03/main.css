@@ -139,6 +139,10 @@ body {
 .sidemenu ul a:hover {
     background: #eeeeee;
 }
+.sidemenu i {
+    margin-right: 5px;
+    color: #888888;
+}
 /* 추천 기사 */
 .recommend {
     margin-bottom: 30px;

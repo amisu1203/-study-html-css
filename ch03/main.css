@@ -158,16 +158,37 @@ body {
     padding: 0;
 }
 .recommend ul a {
+    display: block;
+    margin-bottom: 10px;    
     color: #000000;
     font-size: 14px;
     text-decoration: none;
-    display: block;    
-    padding: 5px;
+    position: relative;
 }
 .recommend ul a:hover {
     background: #eeeeee;
+    opacity: .7;
 }
-/* 인기 기사 */
+.recommend ul img {
+    width: 100%;
+    /* 이미지 아래 공백 제거 */
+    vertical-align: bottom;
+    /* IE10 이전 버전에서 링크 내부이미지 테두리 생김 방지  */
+    border: none;
+}
+.recommend ul .txt-recommend {
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, .5);
+    color: #ffffff;
+}
+/* 추천글 메뉴 글자 중첩하는 설정 */
+.recommend ul .txt-recommend {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* 인기글 */
 .popular {
     margin-bottom: 30px;
 }
@@ -205,7 +226,7 @@ body {
     width: 60px;
     height: 60px;
     float: left;
-    /* IE10 이전 버전에서 링크 내부 이미지에 테두리 쳐짐 방지  */
+    /* IE10 이전 버전에서 링크 내부이미지 테두리 생김 방지  */
     border: none;
 }
 .popular ul .txt-popular {

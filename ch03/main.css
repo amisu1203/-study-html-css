@@ -66,6 +66,13 @@ body {
     max-width: 100%;
     margin-bottom: 20px;
 }
+.article-cat h3 {
+    font-size: 28px;
+    margin: 20px 0;
+    /* 소제목 왼쪽에 바 추가 */
+    border-left: solid 10px #85afb3;
+    padding-left: 10px;
+}
 /* 기사 작성일 */
 .time-article-cat {
     margin-top: -10px;

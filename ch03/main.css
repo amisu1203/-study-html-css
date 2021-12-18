@@ -240,6 +240,39 @@ body {
     color: #85afb3;
     margin-top: 7px;
 }
+/* SNS 공유 버튼 */
+.share {
+    margin-top: 40px;
+}
+.share ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.share li {
+    float: left;
+    width: 33.33%;
+}
+.share li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 5px;
+    text-align: center;
+}
+.share li .share-tw {
+    background: #55acee;
+}
+.share li .share-fb {
+    background: #3b5998;
+}
+.share li .share-gp {
+    background: #dd4b39;
+}
+.share li a:hover {
+    opacity: .7;
+}
 
 /* box5 */
 .copyright p{
@@ -270,6 +303,15 @@ body {
     }
     .box3 {
         padding-top: 25px;
+    }
+    /* 공유 링크 텍스트 */
+    .share li span {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
     }
 }
 

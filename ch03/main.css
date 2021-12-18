@@ -273,6 +273,44 @@ body {
 .share li a:hover {
     opacity: .7;
 }
+/* 관련 기사 */
+.relation {
+    padding: 20px;
+    margin-top: 40px;
+    background: #f5f5e9;
+}
+.relation h2 {
+    font-size: 20px;
+    margin: 0 0 10px 10px;
+    color: #4e4e23;
+}
+.relation ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.relation ul li {
+    float: left;
+    width: 25%;
+}
+.relation li a {
+    display: block;
+    margin: 0 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;
+}
+.relation li a:hover {
+    text-decoration: underline;
+}
+.relation img {
+    max-width: 100%;
+    /* IE10 이전 버전에서 링크 내부이미지 테두리 생김 방지  */
+    border: none;
+}
+.relation .txt-relation {
+    margin: 10px 0;
+}
 
 /* box5 */
 .copyright p{
@@ -293,9 +331,12 @@ body {
     .site h1 {
         font-size: 20px;
     }
-    /* 기사 제목 */
+    /* 기사 */
     .article-cat h2 {
         font-size: 26px;
+    }
+    .article-cat p {
+        font-size: 14px;
     }
     /* 박스 사이의 간격 */
     .box1 {
@@ -312,6 +353,16 @@ body {
         height: 1px;
         margin: -1px;
         overflow: hidden;
+    }
+    /* 관련 기사 */
+    .relation {
+        padding: 10px;
+    }
+    .relation ul li {
+        width: 50%;
+    }
+    .relation ul li:nth-child(3) {
+        clear: both;
     }
 }
 

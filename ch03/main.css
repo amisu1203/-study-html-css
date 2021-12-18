@@ -193,6 +193,22 @@ body {
 .popular ul a:hover {
     background: #eeeeee;
 }
+.popular ul a::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.popular ul img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    /* IE10 이전 버전에서 링크 내부 이미지에 테두리 쳐짐 방지  */
+    border: none;
+}
+.popular ul .txt-popular {
+    float: none;
+    margin-left: 60px;
+}
 
 /* box5 */
 .copyright p{

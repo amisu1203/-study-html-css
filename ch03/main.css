@@ -3,6 +3,11 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 리셋 */
+.box1, .boxA, .cont-box2, .cont-box5 {
+    padding: 0 10px;
+}
+
 /* box1 */
 .box1 {
     padding: 8px 0;

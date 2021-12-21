@@ -2,6 +2,9 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
+.box1, .cont-float, .cont-box2, .cont-box5 {
+    padding: 0 10px;
+}
 
 /* box1 */
 .box1 {
@@ -340,7 +343,7 @@ body {
     }
     /* 박스 사이의 간격 */
     .box1 {
-        padding: 4px 0;
+        padding: 4px 10px;
     }
     .box3 {
         padding-top: 25px;
@@ -415,7 +418,7 @@ body {
 
 /* 1040px 이상일 때 */
 @media screen and (min-width: 1040px) {
-    .box1, .box2, .cont-float, .box5 {
+    .box1, .cont-float, .cont-box2 {
         width: 1200px;
         margin-left: auto;
         margin-right: auto;

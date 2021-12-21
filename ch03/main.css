@@ -316,13 +316,14 @@ body {
 }
 
 /* box5 */
+.box5 {
+    border-top: 1px solid #dddddd;
+}
 .copyright p{
     margin: 0;
     color: #666666;
     font-size: 14px;
-    border-top: 1px solid #dddddd;
 }
-
 /* 599px 이하일 때 */
 @media screen and (max-width: 599px) {
     /* 네비게이션 */
